@@ -3,31 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
     <title>Cinthya Vazquez</title>
 </head>
 <body>
-    <header>
+    <header class="header"> 
         <h1>Cinthya Vazquez</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
+        <nav> 
+            <div>
+                <a href="#about">About Me</a>
+            </div>
+            <div>
+                <a href="#work">Work</a>
+            </div>
+            <div>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <div>
+                <a href="#resume">Resume</a>
+            </div>
         </nav>
     </header>
+
+    <section class="subheading">
+        <img src="Assets/Images/h2-img.jpg">
+        <div class="subheading-position">Portfolio</div>
+    </section>   
+
     <main>
         <section id="about">
-            <h2>About Me</h2>
+            <div><h2>About Me</h2></div>
             <p>This is the actual about me content</p>
         </section>
-        <section id="work">
-            <h2>Work</h2>
-            <p>This is the actual about me content</p>
+        <section>
+            <h2 id="work">Work</h2>
+            <div class="work-buttons">
+                <a href="https://sur-report-example.com">
+                    <img src="Assets/Images/surf-report-img.jpg" alt="sky with sun shining through some clouds">
+                    <div>
+                        <h2>Surf Report</h2>
+                    </div>
+                </a>
+        
+                <a href="https://sur-report-example.com">
+                    <img src="Assets/Images/led-wall-img.jpg" alt="hand pointing at an accent blue wall">
+                    <div>
+                        <h2>Led Wall</h2>
+                    </div>
+                </a>
+                <a href="https://sur-report-example.com">
+                    <img src="Assets/Images/calculator-img.jpg" alt="computer showing HTML code">
+                    <div>
+                        <h2>Calculator</h2>
+                    </div>
+                 </a>
+                <a href="https://sur-report-example.com">
+                    <img src="Assets/Images/pastel-puzzles-img.jpg" alt="Puzzle made of pastel pieces">
+                    <div>
+                        <h2>Pastel Puzzles</h2>
+                    </div>
+                </a>
+                <a href="https://sur-report-example.com">
+                    <img src="Assets/Images/running-buddy-img.jpg" alt="Person's legs getting ready to run in a track">
+                    <div>
+                        <h2>Running Buddy</h2>
+                    </div>
+                </a>
+            </div>
         </section>
         <section id="contant">
-            <h2>Contant</h2>
+            <h2>Contact</h2>
             <ul>
                 <li>Phone: <a href="tel: +19562529683">+1 (956) 252 9683</a></li>
                 <li>Email: <a href="mailto:test@gmail.com">test@gmail.com</a></li>
