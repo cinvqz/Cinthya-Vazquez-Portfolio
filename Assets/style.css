@@ -2,38 +2,52 @@
     font-family: Arial, Helvetica, sans-serif
 }
 .header{
-    background-color: #DAB2C9;
-    height: 150px;
+    background-color: #415a77;
+    height: 100px;
     width: 100%;
     display:flex;
+    align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+body {
+    background-color: #1b263b ;
+    margin: 10px;
 }
 
 h1{
-    background-color: #a28089;
+    background-color: #778da9;
     color: white;
-    text-shadow: 1px 1px 2px black;
     width: 300px;
-    height: 80px;
-    line-height: 70px;
+    height: 60px; 
+    line-height: 70px; 
     text-align: center;
+    text-shadow: 1px 1px 2px #1b263b;
+    border-radius: 0px 10px 10px 0px;
 }
 
-nav div{
-    line-height: 190px;
+nav {
+    padding: 0;
+    margin: 0;
+}
+
+nav div {
+    margin-right: 5px;
     display: inline;
-
 }
+
 nav div a{
-    color: #a28089;
+    color: whitesmoke;
     font-size: 14px;
     font-weight: 800;
     margin-right: 8px;
     text-decoration: underline;
     text-underline-offset: 4px;
-    text-shadow: 3px 3px 6px white;
-    
+    text-shadow: 3px 3px 6px #778da9;
+    display: inline;
 }
+
 .subheading {
 position: relative;
 }
@@ -43,13 +57,13 @@ position: relative;
     height: 150px;
     opacity: 0.5;
 }
+
 .subheading-position{
     position: absolute;
     bottom: 8px;
     right: 16px;
     font-size: 25px;
     font-weight: 600;
-    background-color: #a28089;
     color: white;
     text-shadow: 1px 1px 2px black;
     width: 110px;
@@ -57,8 +71,161 @@ position: relative;
     text-align: center;
 }
 
-.work-buttons img{
+#about {
+    position: relative;
+    width: 100%;
+}
+
+#about h2 {
+    color: white;
+    font-size: 50px;
+    text-align: end;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 5px solid #778da9;
+    margin: 30px 10px 0 0;
+    padding:10px 10px 40px 0px;
+    width: 15%;
+}
+
+#about p{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    margin-top: 60px;
+    line-height: 20px;
+}
+#about p::first-letter {
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 5px black;
+}
+
+#work-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: start;
+    margin-top: 60px;
+    width: 100%;
+    text-align: end;
+}
+
+#work-container h2 {
+    color: white;
+    border-right: 5px solid #778da9;
+    font-size: 50px;
+    padding: 10px 10px 40px 0px;
+    width: 15%;
+   
+}
+.work-buttons {
+    flex: 0 0 calc(50% - 10px);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.work-buttons img {
+    border: 5px solid #778da9;
+    box-shadow: 0px 4px 8px #778da9;
+}
+    
+#top-img {
+    height: 300px;
+    width: 1000px;
+    margin: 60px 0 10px 20px;
+ }
+
+ .block-img1 {
+    width: 450px;
+    height: 100px;
+    margin: 10px -5px 10px 0px;
+ }
+ .block-img2 {
+    width: 450px;
+    height: 100px;
+    margin: 10px 140px 0 0;
+ }
+ .block-img3 {
+    width: 450px;
+    height: 100px;
+    margin: 10px -5px 0px 0;
+ }
+ .block-img4 {
+    width: 450px;
+    height: 100px;
+    margin: 10px 140px 0 0;
+ }
+.work-title h3 {
+    color: white;
+    position: absolute;
+    background-color: #778da9;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+#surf-report {
+    font-size: 30px;
+    width: 130px;
+    height: 75px;
+    top: 99%;
+    left: 18%;
+}
+#led-wall {
+    top: 121%;
+    left: 18%;
+}
+#calculator {
+    top: 121%;
+    right: 36.5%;
+}
+
+#pastel-puzzles {
+    top: 138%;
+    left: 18%;
+}
+#running-buddy {
+    top: 138%;
+    right: 36.5%;
+}
+
+#contact{
     display:flex;
-    width: 30%;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#contact h2 {
+    color: white;
+    font-size: 50px;
+    text-align: end;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 5px solid #778da9;
+    margin: 30px 10px 0 0;
+    padding:10px 10px 40px 0px;
+    width: 15%;
+}
+#contact ul {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    vertical-align: top;
+    width: 90%;
+    margin-top: 60px;
+    line-height: 20px;
+    list-style-type: none;
+    margin-right: 5px;
+
+}
+.contact-info {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #778da9;
+    margin-right: 80px;
 }
