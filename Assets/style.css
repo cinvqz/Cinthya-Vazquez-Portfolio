@@ -158,7 +158,6 @@ position: relative;
  }
 .work-title h3 {
     color: white;
-    position: absolute;
     background-color: #778da9;
     width: 100px;
     height: 50px;
@@ -173,23 +172,28 @@ position: relative;
     height: 75px;
     top: 99%;
     left: 18%;
+    position: absolute;
 }
 #led-wall {
     top: 121%;
     left: 18%;
+    position: absolute;
 }
 #calculator {
     top: 121%;
     right: 36.5%;
+    position: absolute;
 }
 
 #pastel-puzzles {
     top: 138%;
     left: 18%;
+    position: absolute;
 }
 #running-buddy {
     top: 138%;
     right: 36.5%;
+    position: absolute;
 }
 
 #contact{
