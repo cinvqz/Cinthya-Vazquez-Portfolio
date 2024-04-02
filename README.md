@@ -13,7 +13,10 @@ To access the project content:
      https://github.com/cinvqz/Cinthya-Vazquez-Portfolio
    ```
     2. Use comand git clone to clone the repo
-
+   ```
+    3. Use this link to access the deployed webpage:
+     https://cinvqz.github.io/Cinthya-Vazquez-Portfolio/
+   ```
 ## Usage
 
 This webpage can be used to navigate through my projects as a Bootcamp student. 
