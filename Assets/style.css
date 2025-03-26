@@ -79,13 +79,15 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#about p,
-.project p,
-#skills ul,
-#contact ul {
+#about p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    white-space: pre-line;
+}
+
+#about p::before {
+    content: "Hi there! I’m Cinthya — a bilingual, research-driven creative with a background in psychology and a deep curiosity for human behavior and neuroscience. I’m passionate about using data and storytelling to uncover patterns, solve real-world problems, and amplify the voices of marginalized communities.\A\A I’m especially excited to grow my skills in both data analytics and data visualization — and to build tools that are thoughtful, accessible, and human-centered. The projects featured in this portfolio were built during my time in the Full Stack Web Development Bootcamp at The University of Texas at Austin — Hook ’em! 🤘 — and showcase some of the technical foundations I’ve developed in front-end and back-end development.\A\A Let’s use research, data, and a little creativity to make things better — together.";
 }
 
 .projects-grid {
