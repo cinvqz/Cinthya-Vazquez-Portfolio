@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
     <title>Cinthya Vazquez</title>
 </head>
@@ -15,55 +16,50 @@
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
             <a href="Cinthya-Vazquez-Resume.pdf" target="_blank">Resume</a>
-
         </nav>
     </header>
-
-    <section class="subheading">
-        <img src="Assets/Images/h2-img.jpg" alt="Portfolio banner">
-        <div class="subheading-position">Portfolio</div>
-    </section>   
-
+    
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p aria-hidden="true"></p>
-        </section>
+            <img src="Assets/Images/headshot.png" alt="Cinthya Vazquez Portfolio Banner" class="hero-img">
+            <h2 class="animate-on-scroll">About Me</h2>
+            <p></p> <!-- Bio still renders from CSS -->
+          </section>
 
         <section id="work">
-            <h2>Work</h2>
+            <h2 class="animate-on-scroll">Work</h2>
             <div class="projects-grid">
                 <div class="project">
-                    <h3>The Daily Tech</h3>
+                    <h3 class="animate-on-scroll">The Daily Tech</h3>
                     <p>A full-stack CMS-style blog platform using Handlebars.js, Sequelize, and MVC architecture.</p>
                     <a href="https://github.com/cinvqz/the-daily-tech" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="project">
-                    <h3>My Weather Genie</h3>
+                    <h3 class="animate-on-scroll">My Weather Genie</h3>
                     <p>A responsive weather dashboard using OpenWeather API and JavaScript for real-time updates.</p>
                     <a href="https://cinvqz.github.io/my-weather-genie/" target="_blank">Live Site</a>
                     <a href="https://github.com/cinvqz/my-weather-genie" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="project">
-                    <h3>Social Network API</h3>
+                    <h3 class="animate-on-scroll">Social Network API</h3>
                     <p>A NoSQL-based back-end app using Express.js and MongoDB for a developer social network.</p>
                     <a href="https://github.com/cinvqz/social-network-api" target="_blank">GitHub Repo</a>
                     <a href="https://watch.screencastify.com/v/m1dNl11ww8qBCN4UuyqW" target="_blank">Demo Video</a>
                 </div>
                 <div class="project">
-                    <h3>Employee Tracker</h3>
+                    <h3 class="animate-on-scroll">Employee Tracker</h3>
                     <p>A CLI-based application to manage departments, roles, and employees using MySQL.</p>
                     <a href="https://github.com/cinvqz/employee-tracker" target="_blank">GitHub Repo</a>
                     <a href="https://watch.screencastify.com/v/K8C5AESntTWP6ElBFV5i" target="_blank">Demo Video</a>
                 </div>
                 <div class="project">
-                    <h3>Note Taker</h3>
+                    <h3 class="animate-on-scroll">Note Taker</h3>
                     <p>A deployed web application for saving and deleting notes built with Express.js.</p>
                     <a href="https://note-taker-enbf.onrender.com/" target="_blank">Live Site</a>
                     <a href="https://github.com/cinvqz/note-taker" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="project">
-                    <h3>Gym Website (Group Project)</h3>
+                    <h3 class="animate-on-scroll">Gym Website (Group Project)</h3>
                     <p>A collaborative landing page design and development project using HTML/CSS/JS.</p>
                     <a href="https://soulful0.github.io/Gym-Website/" target="_blank">Live Site</a>
                     <a href="https://github.com/Soulful0/Gym-Website" target="_blank">GitHub Repo</a>
@@ -72,7 +68,7 @@
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 class="animate-on-scroll">Skills</h2>
             <ul>
                 <li>JavaScript</li>
                 <li>SQL</li>
@@ -83,7 +79,7 @@
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2 class="animate-on-scroll">Contact Me</h2>
             <ul>
                 <li>Phone: <a href="tel:+19562529683">+1 (956) 252 9683</a></li>
                 <li>Email: <a href="mailto:cinthyavqza@gmail.com">cinthyavqza@gmail.com</a></li>
@@ -96,5 +92,20 @@
     <footer>
         <p>&copy; 2024 Cinthya Vazquez</p>
     </footer>
+
+    <script>
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+      
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target); // Animate once
+            }
+          });
+        });
+      
+        animatedElements.forEach(el => observer.observe(el));
+      </script>
 </body>
 </html>
